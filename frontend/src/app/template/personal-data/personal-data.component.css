@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(243, 241, 241);
+}
+
+.content {
+    overflow: hidden;
+    display: flex;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 800px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.welcome {
+    margin-top: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    padding: 20px;
+}
+
+.welcome i {
+    margin-top: 40px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 26, 255, 0.712);
+}
+
+.welcome h1 {
+    font-size: 2.6rem;
+    color: rgba(0, 0, 0, 0.678);
+    text-align: center;
+}
+
+.welcome p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.678);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.welcome span {
+    color: rgba(0, 0, 0, 0.678);
+    margin-left: 5px;
+}
+
+.welcome .input {
+    max-width: 400px;
+    height: 45px;
+    margin-left: 5px;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.178);
+}
+
+.welcome .checkbox {
+    width: 20px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.welcome a {
+    background: rgba(0, 0, 0, 0.178);
+    text-decoration: none;
+    margin-left: 70px;
+    background-color: white;
+}
+
+.welcome button {
+    max-width: 200px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: white;
+    background-color: #4d62fd;
+    font-size: 20px;
+}
+
+.welcome button:active {
+    background-color: rgb(181, 71, 255);
+}
+
+.create-acount {
+    background: linear-gradient(to right, #7412cb, #c42697);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.create-acount i {
+    margin-top: 40px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-acount h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.create-acount span {
+    color: white;
+    margin-left: 5px;
+}
+
+.create-acount input {
+    max-width: 400px;
+    height: 45px;
+    margin-left: 5px;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.create-acount button {
+    max-width: 200px;
+    padding: 15px;
+    margin-left: 5px;
+    margin-top: 80px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgb(121, 120, 120);
+    font-size: 20px;
+}
+
+.create-acount button:active {
+    background-color: #4d62fd;
+    color: white;
+}
+
+@media screen and (max-width: 320px) {
+    .content {
+        display: block;
+        max-width: 1000px;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .welcome {
+        background-color: rgb(255, 255, 255);
+        height: 630px;
+        padding: 20px;
+    }
+    .welcome button {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .welcome a {
+        font-size: 15px;
+        position: relative;
+        right: 70px;
+    }
+    .create-acount {
+        background: linear-gradient(to right, #7412cb, #c42697);
+        padding: 20px;
+    }
+    .create-acount button {
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .content {
+        display: block;
+        max-width: 1000px;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .welcome {
+        background-color: rgb(255, 255, 255);
+        height: 700px;
+        padding: 20px;
+    }
+    .welcome button {
+        margin-top: 20px;
+        margin-right: 15px;
+        margin: auto;
+        width: 200px;
+    }
+    .welcome a {
+        font-size: 15px;
+        position: relative;
+        right: 70px;
+        padding: 0;
+    }
+    .welcome .span-forgot {
+        max-width: 200px;
+    }
+    .create-acount {
+        background: linear-gradient(to right, #7412cb, #c42697);
+        padding: 20px;
+    }
+    .create-acount button {
+        margin: auto;
+        margin-top: 20px;
+        width: 200px;
+    }
+}
